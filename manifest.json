@@ -1,0 +1,22 @@
+{
+   "browser_action": {
+      "default_icon": "48.png",
+      "default_popup": "popup.html",
+      "default_title": "images"
+   },
+   "content_scripts": [ {
+      "js": [ "jquery-1.7.2.min.js", "com.js" ],
+      "matches": [ "http://www.google.com/*" ]
+   } ],
+   "description": "images",
+   "icons": {
+      "128": "128.png",
+      "48": "48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCzASH5f5eEUM4aJFrXTvRqoKcXPDTMvcGgj8flSKkD4p+x7yvoWyS/saGA97JOFtCD3juYYugwxPFm77nA6fJ/tqSOyPxx7HP9HZfzO5WjkadOkOLVeVasb35FbniEXxnFF6cHhZt7NVDaOpSGXUJCsoGOfWewFGzuFf+5yJLKPQIDAQAB",
+   "manifest_version": 2,
+   "name": "Download Images",
+   "permissions": [ "tabs", "http://*/*", "notifications" ],
+   "version": "1.0.0.1001",
+   "web_accessible_resources": [ "48.png" ]
+}
